@@ -1,0 +1,96 @@
+/* #lightlayer > #ll-cell > #ll-holder */
+
+#lightlayer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10000;
+    left: 0px;
+    top: 0px;
+    table-layout: absolute;
+    opacity: 0;
+}
+
+#ll-cell {
+    width: 100%;
+    display: table-cell;
+    text-align: center;
+}
+
+#ll-holder {
+    width: 96%;
+    display: inline-block;
+    margin: 2%;
+}
+
+.ll-pop {
+    display: none;
+    width: 100%;
+    min-width: 280px;
+    min-height: 200px;
+    position: relative;
+    box-shadow: 1px 2px 2px #999;
+    background-color: #FFF;
+    opacity: 0;
+    text-align: left;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+}
+
+.ll-pop .x-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.ll-pop .x-button:before {
+    display: block;
+    content: 'x';
+    background-color: #268BD2;
+    color: #FFF;
+    width: 13px;
+    height: 13px;
+    font: normal 10px 'Arial';
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 3px;
+}
+
+.ll-pop .x-button:hover:before {
+    background-color: #D02000;
+}
+
+.ll-pop .head {
+    padding: 10px 3% 0px;
+    text-align: center;
+}
+
+.ll-pop .body {padding: 3%}
+
+.ll-pop .body .title {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.ll-pop .body iframe {
+    display: block;
+    margin: 0px auto;
+    width: 100% !important;
+}
+
+.ll-pop .foot {
+    padding: 10px 3%;
+    text-align: center;
+}
+
+.lightlayer {
+    min-height: 0px !important;
+}

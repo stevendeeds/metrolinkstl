@@ -1,0 +1,79 @@
+    section {
+        padding: 120px @generalSidePadding 50px;
+    }
+
+        article {}
+
+            .block {
+                width: 48%;
+                margin-bottom: 4%;
+                
+                &.l {
+                    float: left;
+                    clear: left;
+                }
+
+                &.r {
+                    float: right;
+                    clear: right;
+                }
+                
+                &#download {
+                    a {
+                        display: inline-block;
+                        width: auto;
+                        padding: 0px 10%;
+                        line-height: 40px;
+                        background-color: @colorBlue;
+                        color: @colorWhite;
+                        text-decoration: none;
+                        .border-radius(3px);
+                    }
+                }
+            }
+
+                h2 {
+                    margin-bottom: 12px;
+                    .title;
+                }
+
+                h3 {
+                    .title(24px);
+                    margin-top: 24px;
+                }
+
+
+
+@media screen and (max-width: 799px) {
+    
+            .block {
+                width: 100%;
+                
+                &.l, &.r {
+                    float: none;
+                }
+            }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    section {
+        padding: 80px @generalSidePadding 30px;
+    }
+
+            .block {
+                margin-bottom: 20px;
+            }
+
+                h2 {
+                    .title(18px);
+                    margin-bottom: 5px;
+                }
+
+                h3 {
+                    .title(14px);
+                    margin-top: 10px;
+                }
+        
+}

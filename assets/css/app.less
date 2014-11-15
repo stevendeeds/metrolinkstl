@@ -1,0 +1,133 @@
+@containerWidth: 900px;
+@import "reset.less";
+@import "gumby.less";
+@import "responsive.gs.12col.less";
+@import "lightLayer.less";
+
+@red: #ff603f;//#ff4e2a;
+
+
+img {
+	display: block;
+	width: 100%;
+}
+
+
+body {
+	font-family: "omnes-pro",sans-serif;
+	overflow-x: hidden;
+	color: #1b1b1b;
+}
+
+header, article {
+	padding: 100px 0;
+	display: block;
+	width: 100%;
+	h1 {
+		text-align: center;
+		font-size: 2.8em;
+		line-height: 1.4em;
+		padding-bottom: 30px;
+/* 		font-weight: bold; */
+	}
+}
+footer {
+	padding: 60px 0px;
+	h4 {
+		color: white;
+		text-align: center;
+	}
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+}
+header {
+	background: url("../i/rendering.jpg") no-repeat center center fixed @red; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  padding: 240px 0;
+	  
+	h1 {
+		color: white;
+		text-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+	}
+	#newsletter {
+		box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+	}
+}
+.button {
+	padding: 10px 12px;
+	text-align: center;
+	border: none;
+	border-radius: 2px;
+	background: #1b1b1b;
+	color: white;
+	font-size: 1.1em;
+	margin: 0;
+	font-family: "omnes-pro", sans-serif;
+}
+h1, h2, h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.red {
+	background: @red;
+	color: white; 
+	h2 {
+		margin-top: -0.8em;
+		padding: 0;
+		margin-bottom: 0.5em;
+		text-align: left;
+		color: darken(@red, 25%);
+	}
+	
+}
+#map {
+	h2 {
+		margin-top: -0.8em;
+		padding: 0;
+		margin-bottom: 0.5em;
+		text-align: left;
+	}
+}
+p {
+	font-size: 1.1em;
+}
+
+input {
+	display: block;
+	padding-left: 10px;
+	width: 100%;
+	height: 46px;
+	border-radius: 2px;
+	border: none;
+}
+div[class*="module"] {
+	display: none;
+}
+article#images {
+	padding: 0;
+}
+.group {
+	text-align: center;
+}
+#moreinfo {
+	p {
+		font-size: 2em;
+		text-align: center;
+		a {
+			color: @red;
+			&:hover {
+				color: darken(@red, 10%);
+			}
+		}
+	}
+}
+.thumbcontainer {
+	max-height: 200px;
+	overflow: hidden;
+}

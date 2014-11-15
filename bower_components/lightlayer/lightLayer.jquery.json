@@ -1,0 +1,27 @@
+{
+  "name": "lightLayer",
+  "title": "lightLayer",
+  "description": "A simple responsive lightbox & dialog script",
+  "version": "0.1.0",
+  "homepage": "https://github.com/martinmethod/lightLayer",
+  "author": {
+    "name": "Martin Metodiev",
+    "email": "metodiev.martin@gmail.com",
+    "url": "http://martinmetodiev.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinmethod/lightLayer.git"
+  },
+  "bugs": "https://github.com/martinmethod/lightLayer/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/martinmethod/lightLayer/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": "lightLayer, lightbox, popup, dialog, responsive, plugin, jQuery"
+}

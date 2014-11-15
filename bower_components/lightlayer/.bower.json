@@ -1,0 +1,61 @@
+{
+  "name": "lightLayer",
+  "title": "lightLayer",
+  "description": "A simple responsive lightbox & dialog script",
+  "keywords": [
+    "lightLayer",
+    "lightbox",
+    "popup",
+    "dialog",
+    "responsive",
+    "plugin",
+    "jQuery"
+  ],
+  "homepage": "https://github.com/martinmethod/lightLayer",
+  "author": {
+    "name": "Martin Metodiev",
+    "email": "metodiev.martin@gmail.com",
+    "url": "http://martinmetodiev.com"
+  },
+  "maintainers": {
+    "name": "Martin Metodiev",
+    "email": "metodiev.martin@gmail.com",
+    "url": "http://martinmetodiev.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinmethod/lightLayer.git"
+  },
+  "bugs": "https://github.com/martinmethod/lightLayer/issues",
+  "licenses": [
+    "MIT"
+  ],
+  "dependencies": {
+    "jquery": "git://github.com/jquery/jquery.git",
+    "css_browser_selector": "git://github.com/verbatim/css_browser_selector.git",
+    "normalize-css": "git://github.com/necolas/normalize.css.git"
+  },
+  "main": [
+    "dist/jquery.lightLayer.js",
+    "dist/jquery.lightLayer.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "libs",
+    "src",
+    "test"
+  ],
+  "_release": "335ce198c0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "335ce198c064ec5f50e8e093d089e55ff54b2d21"
+  },
+  "_source": "git://github.com/martinmethod/lightLayer.git",
+  "_target": "*",
+  "_originalSource": "lightlayer",
+  "_direct": true
+}

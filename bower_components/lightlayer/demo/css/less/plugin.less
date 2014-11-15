@@ -1,0 +1,182 @@
+    #plugin {
+        
+        .content {
+
+            .definition {
+                color: @colorYellow;
+            }
+
+            #background-color {
+                width: 54px;
+                text-transform: uppercase;
+            }
+
+            #opacity,
+            #transition {
+                width: 26px;
+            }
+
+            .submit {
+                margin-left: 140px;
+            }
+
+        }
+    }
+
+    .form {
+        ul li {
+            margin-bottom: 12px;
+        }
+
+        .error .definition,
+        .error input.textfield {
+            color: @colorRed !important;
+        }
+
+        .tip {
+            font-size: 11px;
+            line-height: normal;
+            color: @colorGreen;
+        }
+
+        .tip.space {
+            padding-top: 3px;
+        }
+
+        .group {
+            margin-bottom: 15px;
+        }
+
+        .term {
+            padding-left:  140px;
+            padding-right: 120px;
+        }
+
+        .definition {
+            float: left;
+            width: 130px;
+        }
+
+        .change {
+            float: right;
+        }
+
+        .radio-button {
+            display: block;
+            padding-bottom: 3px;
+        }
+
+        .radio-button input,
+        label,
+        input.btn {
+            cursor: pointer;
+        }
+
+        input {
+            margin: 0px;
+        }
+
+        .radio-button label {
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+
+        .submit {
+            padding: 10px 0px;
+        }
+
+        .background-color {
+            .term {
+                margin-left: -9px;
+            }
+
+            .tip {
+                margin-left:  9px;
+            }
+        }
+    }
+
+    .non-mobile {
+        .content {
+            display: none;
+        }
+        
+        &:after {
+            content: 'This plugin is not available for mobile devices.'
+        }
+    }
+
+    .popup {
+        max-width: 640px;
+        display: none;
+        
+        .ttl-popup {
+            display: block;
+            background-color: @colorYellow;
+            margin-top: 20px;
+            padding: 0px 5px;
+            .border-radius(3px);
+            
+        }
+
+        &#popup_options {
+            text-align: center;
+
+            .form {
+                display: inline-block;
+                text-align: left;
+            }
+        }
+        
+        &#popup_cache,
+        &#popup_data_transfer,
+        &#popup_switch1,
+        &#popup_switch2 {
+            max-width: 320px;
+        }
+        
+        &#popup_cache {
+            .row {
+                margin-top: 20px;
+                
+                label {
+                    display: inline-block;
+                    width: 76px;
+                    margin: 0px 10px;
+                }
+
+                input {
+                    width: 160px;
+                }
+            }
+        }
+    }
+
+    .ll-pop {
+        color: @colorDark;
+    }
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .form {
+        .definition {
+            float: none;
+        }
+
+        .term {
+            padding-left:  0px;
+            padding-right: 0px;
+        }
+
+        .change {
+            padding-top: 16px;
+        }
+    }
+
+    #plugin .content .submit {
+        margin: 0px;
+    }
+
+}

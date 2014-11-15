@@ -1,0 +1,61 @@
+// Fixes
+.cf {
+    &:after{
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        font-size: 0pt;
+    }
+}
+
+
+
+// Texts
+.pageTitle(@fontSize: 56px) {
+    font: normal @fontSize 'ropa_sans_probold', Verdana, Arial;
+    color: @colorGreen;
+}
+
+.title(@fontSize: 32px) {
+    font: normal @fontSize 'ropa_sans_probold', Verdana, Arial;
+    color: @colorYellow;
+}
+
+.paragraph(@fontSize: 18px, @lineHeight: 140%, @color: @colorWhite) {
+    font: normal @fontSize/@lineHeight 'ropa_sans_prolight', Verdana, Arial;
+    text-align: left;
+    color: @color;
+}
+
+.info(@fontSize: 15px, @lineHeight: 140%) {
+    font: normal @fontSize/@lineHeight 'ropa_sans_prolight_italic', Verdana, Arial;
+    color: @colorYellow;
+}
+
+
+
+// Spaces
+.pagePadding {
+    padding: 0px @generalSidePadding;
+}
+
+
+
+// Backgrounds
+.background-size(@x, @y) {
+  -webkit-background-size: @x @y;
+       -o-background-size: @x @y;
+          background-size: @x @y;
+}
+
+
+
+// Borders
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+         -o-border-radius: @radius;
+            border-radius: @radius;
+}
